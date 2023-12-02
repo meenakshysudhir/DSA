@@ -40,18 +40,35 @@ int main(void)
         }
         else if(ch == 2)
         {
-            // struct Stack* temp = Top;
-            Top -> Link = (Top -> Link) -> Link;
+            if(Top ==  NULL)
+            {
+                printf("Underflow\n");
+            }
+            else{
+                Top = (Top -> Link) ;
+                printf("Top element Popped\n");
+            }
             
         }
         else if(ch == 3)
         {
             struct Stack* temp = Top;
-            while(temp != 0)
+            if(temp == NULL)
             {
-                printf("%d\n",temp -> Data);
-                temp = temp -> Link;
+                printf("Empty Stack\n");
             }
+            else{
+                while(temp != 0)
+                {
+                    printf("%d\n",temp -> Data);
+                    temp = temp -> Link;
+                }
+            }
+        }
+        else if (ch == 4)
+        {
+            printf("Exited program!\n");
+            break;
         }
     }
 }
