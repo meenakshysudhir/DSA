@@ -81,31 +81,7 @@ struct Node* DeleteNode(struct Node* root,int x)
     return root;
 
 }
-// struct Node* SearchKey(struct Node* root,int key)
-// {
-//     if(root == NULL)
-//     {
-//         return NULL;
-//     }
-    
-//     if(root -> Data != key) 
-//     {
-//         if(root -> Data > key)
-//         {
-//             return SearchKey(root -> LC,key);
-//             // return root;
-//         }
-//         else if(root -> Data < key)
-//         {
-//             return SearchKey(root -> RC,key);
-//             // return root;
-//         }
-//     }
-//     else
-//     {
-//         return NULL;
-//     }
-// }
+
 void SearchKey(struct Node* root,int key)
 {
     if(root == NULL)
