@@ -88,7 +88,7 @@ void SearchKey(struct Node* root,int key)
         printf("Key not found\n");
         return;
     }
-    // struct Node* ptr = root;
+    
     if(root -> Data == key)
     {
         printf("Key found");
